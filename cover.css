@@ -1,0 +1,97 @@
+/*
+ * Globals
+ */
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+font-family: "Neucha", cursive;
+overflow-x: hidden;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  margin: 0;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+/*
+ * Header
+ */
+header{
+  background: #212529;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover {
+  border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.play-section {
+  position: fixed;
+  overflow: hidden;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: -100;
+  opacity: 0.3;
+}
+
+.home{
+  display: block;
+}
+.news {
+  display: none;
+}
+.playlist{
+  display: none;
+}
+.reviews{
+  display: none;
+}
+.contact{
+  display: none;
+}
